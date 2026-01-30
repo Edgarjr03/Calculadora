@@ -17,23 +17,46 @@ namespace Calculadora
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 Double a = 0, b = 0, resultado = 0;
                 a = Convert.ToDouble(TxtVariableA.Text);
                 b = double.Parse(TxtVariableB.Text);
 
                 resultado = a + b;
-                MessageBox.Show("El resultado es: " + resultado.ToString(),"sistema",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("El resultado es: " + resultado.ToString(), "sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Reset();
             }
-            catch(Exception){
-                MessageBox.Show("Error en la conversion de datos","sistema",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            catch (Exception)
+            {
+                MessageBox.Show("Error en la conversion de datos", "sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-           
-
-            
 
 
+
+
+
+        }
+
+       // private void bteReset_Click(object sender, EventArgs e)
+       // {
+       //     TxtVariableA.Text = "";
+       //   TxtVariableB.Clear();
+       // }
+
+        //se puede de las 2 formas 
+
+        private void bteReset_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            TxtVariableA.Text = "";
+            TxtVariableB.Clear();
+            TxtVariableA.Focus();
         }
     }
 }

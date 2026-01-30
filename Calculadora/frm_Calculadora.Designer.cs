@@ -33,6 +33,7 @@
             label2 = new Label();
             label1 = new Label();
             btnCalcular = new Button();
+            bteReset = new Button();
             SuspendLayout();
             // 
             // TxtVariableB
@@ -77,11 +78,22 @@
             btnCalcular.UseVisualStyleBackColor = true;
             btnCalcular.Click += btnCalcular_Click;
             // 
+            // bteReset
+            // 
+            bteReset.Location = new Point(205, 174);
+            bteReset.Name = "bteReset";
+            bteReset.Size = new Size(112, 34);
+            bteReset.TabIndex = 9;
+            bteReset.Text = "reset";
+            bteReset.UseVisualStyleBackColor = true;
+            bteReset.Click += bteReset_Click;
+            // 
             // frm_Calculadora
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(630, 294);
+            Controls.Add(bteReset);
             Controls.Add(btnCalcular);
             Controls.Add(TxtVariableB);
             Controls.Add(TxtVariableA);
@@ -100,5 +112,6 @@
         private Label label2;
         private Label label1;
         private Button btnCalcular;
+        private Button bteReset;
     }
 }
