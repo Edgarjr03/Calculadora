@@ -23,9 +23,18 @@ namespace Calculadora
                 a = Convert.ToDouble(TxtVariableA.Text);
                 b = double.Parse(TxtVariableB.Text);
 
-                resultado = a + b;
+                if (rdb_suma.Checked)
+                    resultado = a + b;
+                if (rdb_resta.Checked)
+                    resultado = a - b;
+                if (rdb_multiplicacion.Checked)
+                    resultado = a * b;
+                if (rdb_division.Checked)
+                    resultado = a / b;
+
+                
                 MessageBox.Show("El resultado es: " + resultado.ToString(), "sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Reset();
+               // Reset();
             }
             catch (Exception)
             {
