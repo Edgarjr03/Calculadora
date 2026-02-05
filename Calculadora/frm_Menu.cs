@@ -39,5 +39,11 @@ namespace Calculadora
             frm_Burbuja burbuja = new frm_Burbuja();
             burbuja.Show();
         }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Registro registro = new frm_Registro();
+            registro.Show();
+        }
     }
 }
