@@ -64,7 +64,30 @@ namespace Calculadora
             {
                 dgvPersonas.DataSource = null;
                 dgvPersonas.DataSource = persona;
+                verificarRegistros();
             }
         }
+
+        private void verificarRegistros()
+        {
+            if (persona.Count == 0)
+            {
+                btn_eliminar.Enabled = false;
+            }else { 
+                btn_eliminar.Enabled = true;
+
+            }
+
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            persona.RemoveAt(dgvPersonas.CurrentRow.Index);
+            dgvPersonas.DataSource = null;
+            dgvPersonas.DataSource = persona;
+            verificarRegistros();
+        }
+
+        
     }
 }

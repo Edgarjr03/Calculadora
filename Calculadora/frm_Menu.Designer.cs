@@ -36,6 +36,8 @@
             ordenaToolStripMenuItem = new ToolStripMenuItem();
             burbujaToolStripMenuItem = new ToolStripMenuItem();
             registroToolStripMenuItem = new ToolStripMenuItem();
+            temporizadoresToolStripMenuItem = new ToolStripMenuItem();
+            relogToolStripMenuItem = new ToolStripMenuItem();
             mns_Principal.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             // 
             // aplicacionesToolStripMenuItem
             // 
-            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenaToolStripMenuItem, registroToolStripMenuItem });
+            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenaToolStripMenuItem, registroToolStripMenuItem, temporizadoresToolStripMenuItem });
             aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
             aplicacionesToolStripMenuItem.Size = new Size(126, 29);
             aplicacionesToolStripMenuItem.Text = "Aplicaciones";
@@ -99,6 +101,20 @@
             registroToolStripMenuItem.Text = "Registro";
             registroToolStripMenuItem.Click += registroToolStripMenuItem_Click;
             // 
+            // temporizadoresToolStripMenuItem
+            // 
+            temporizadoresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { relogToolStripMenuItem });
+            temporizadoresToolStripMenuItem.Name = "temporizadoresToolStripMenuItem";
+            temporizadoresToolStripMenuItem.Size = new Size(270, 34);
+            temporizadoresToolStripMenuItem.Text = "Temporizadores";
+            // 
+            // relogToolStripMenuItem
+            // 
+            relogToolStripMenuItem.Name = "relogToolStripMenuItem";
+            relogToolStripMenuItem.Size = new Size(270, 34);
+            relogToolStripMenuItem.Text = "Relog";
+            relogToolStripMenuItem.Click += relogToolStripMenuItem_Click;
+            // 
             // frm_Menu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -125,5 +141,7 @@
         private ToolStripMenuItem ordenaToolStripMenuItem;
         private ToolStripMenuItem burbujaToolStripMenuItem;
         private ToolStripMenuItem registroToolStripMenuItem;
+        private ToolStripMenuItem temporizadoresToolStripMenuItem;
+        private ToolStripMenuItem relogToolStripMenuItem;
     }
 }
