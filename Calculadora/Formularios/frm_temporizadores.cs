@@ -23,16 +23,16 @@ namespace Calculadora
         private void alarma1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string input = Interaction.InputBox("Ingrese la hora (HH:mm:ss): ", "Sistema", DateTime.Now.ToLongTimeString()); // Intentamos convertir el texto a DateTime
-            
-            if (DateTime.TryParse(input, out horaAlarma)) 
-            { 
+
+            if (DateTime.TryParse(input, out horaAlarma))
+            {
                 alarma1 = input;
-                MessageBox.Show("Alarma configurada a las " + horaAlarma.ToLongTimeString()); 
-            } 
-            else 
-            { 
-                MessageBox.Show("Formato inválido. Use HH:mm:ss"); 
-            } 
+                MessageBox.Show("Alarma configurada a las " + horaAlarma.ToLongTimeString());
+            }
+            else
+            {
+                MessageBox.Show("Formato inválido. Use HH:mm:ss");
+            }
         }
 
 
@@ -54,6 +54,9 @@ namespace Calculadora
 
         }
 
+        private void establecerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
-    } 
+        }
+    }
 }

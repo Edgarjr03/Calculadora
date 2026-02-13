@@ -70,6 +70,7 @@
             establecerToolStripMenuItem.Name = "establecerToolStripMenuItem";
             establecerToolStripMenuItem.Size = new Size(107, 29);
             establecerToolStripMenuItem.Text = "Establecer";
+            establecerToolStripMenuItem.Click += establecerToolStripMenuItem_Click;
             // 
             // alarma1ToolStripMenuItem
             // 

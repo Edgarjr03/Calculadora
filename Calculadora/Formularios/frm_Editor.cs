@@ -94,5 +94,21 @@ namespace Calculadora
         {
             this.Close();
         }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ftd_editor.ShowDialog() == DialogResult.OK)
+            {
+                rtx_Editor.Font = ftd_editor.Font;
+            }
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(cld_editor.ShowDialog() == DialogResult.OK)
+            {
+                rtx_Editor.ForeColor = cld_editor.Color;
+            }
+        }
     }
 }

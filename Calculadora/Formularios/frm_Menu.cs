@@ -1,3 +1,5 @@
+using Calculadora.Formularios;
+
 namespace Calculadora
 {
     public partial class frm_Menu : Form
@@ -56,6 +58,12 @@ namespace Calculadora
         {
             frm_Editor editor = new frm_Editor();
             editor.Show();
+        }
+
+        private void contadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_contador contador = new Frm_contador();
+            contador.Show();
         }
     }
 }
