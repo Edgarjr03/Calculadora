@@ -40,6 +40,7 @@
             relogToolStripMenuItem = new ToolStripMenuItem();
             editorToolStripMenuItem = new ToolStripMenuItem();
             contadorToolStripMenuItem = new ToolStripMenuItem();
+            xMLDIrectorioToolStripMenuItem = new ToolStripMenuItem();
             mns_Principal.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             // 
             // aplicacionesToolStripMenuItem
             // 
-            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenaToolStripMenuItem, registroToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem, contadorToolStripMenuItem });
+            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenaToolStripMenuItem, registroToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem, contadorToolStripMenuItem, xMLDIrectorioToolStripMenuItem });
             aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
             aplicacionesToolStripMenuItem.Size = new Size(126, 29);
             aplicacionesToolStripMenuItem.Text = "Aplicaciones";
@@ -131,6 +132,13 @@
             contadorToolStripMenuItem.Text = "Contador";
             contadorToolStripMenuItem.Click += contadorToolStripMenuItem_Click;
             // 
+            // xMLDIrectorioToolStripMenuItem
+            // 
+            xMLDIrectorioToolStripMenuItem.Name = "xMLDIrectorioToolStripMenuItem";
+            xMLDIrectorioToolStripMenuItem.Size = new Size(270, 34);
+            xMLDIrectorioToolStripMenuItem.Text = "XML DIrectorio";
+            xMLDIrectorioToolStripMenuItem.Click += xMLDIrectorioToolStripMenuItem_Click;
+            // 
             // frm_Menu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -161,5 +169,6 @@
         private ToolStripMenuItem relogToolStripMenuItem;
         private ToolStripMenuItem editorToolStripMenuItem;
         private ToolStripMenuItem contadorToolStripMenuItem;
+        private ToolStripMenuItem xMLDIrectorioToolStripMenuItem;
     }
 }
